@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&family=Poppins:wght@300;500&family=Ubuntu:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@800&display=swap');
+
+.temp {
+  border: 2px solid red !important;
+}
+
+body {
+
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+
+
+}
+
+.dropdown-menu li {
+
+  position: relative;
+}
+
+.dropdown-menu .submenu {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-menu>li:hover>.submenu {
+  display: block;
+  left: 100%;
+}
+
+
+
+.navbar-actions-subwrapper {
+
+
+  width: 100%;
+
+}
+
+.navbar-brand {
+  width: 25vw;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 28px;
+  font-family: poppins;
+  color: #4d5390;
+}
+
+.navbar {
+  z-index: 2;
+  border: 2px solid #cfcfcf;
+  width: 100vw;
+
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  opacity: 0.8;
+}
+
+
+.nav-item {
+  
+  padding: 4px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+
+  border-radius: 5px;
+
+  font-family: poppins;
+  font-size: larger;
+}
+.nav-item:hover{
+  border-radius: 0px !important;
+  
+  box-shadow: rgb(77, 83, 144,.4) 0px 5px, rgb(77, 83, 144,0.8) 0px 10px, rgb(77, 83, 144,.2) 0px 15px,rgb(77, 83, 144,0.1) 0px 20px, rgb(77, 83, 144,0.1) 0px 25px;
+}
+
+
+
+
+
+/* --------------------------------frontpage */
+
+
+
+.frontpage-wrapper{
+  
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fp-bg-image-wrapper{
+
+  /* border: 2px solid red; */
+  position: relative;
+  left: 700px;
+  top: -200px;
+  
+  
+}
+
+.fp-bg-image{
+  /* border: 2px solid blue; */
+
+  width: 60vw;
+  height: 150vh;
+  
+}
+
+
+
+.frontpage2-wrapper{
+  
+  /* background-color: rgb(0, 0, 0); */
+  width: 100vw;
+  height: 640px;
+  z-index: 1;
+}
+
+.brand-text{
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  z-index: 1;
+  font-family: 'Wix Madefor Text', sans-serif;
+  color: #4d5390;
+
+
+}
+
+.brand-text-mod{
+  color: #db5e2c;
+
+}
+
+.brand-text-caption{
+  font-family: poppins;
+  font-size: 35px;
+
+}
+
+.brochure-btn{
+  border: 2px solid #4d5390;
+  margin: 10px;
+  font-family: poppins;
+  font-size: 20px;
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 5px;
+  color: #db5e2c;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.brochure-btn:hover{
+  background-color: #db5e2c;
+  color: white;
+  border: 2px solid  #db5e2c;
+}
+
+.about-wrapper{
+  
+
+  
+}
+
+
+.about-head{
+background-color: #fff;
+}
+
+.about-head-title{
+  font-family: 'poppins';
+  font-size: 50px;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 0px !important;
+  
+  
+  box-shadow: rgb(77, 83, 144,.4) 0px 5px, rgb(77, 83, 144,0.8) 0px 10px, rgb(77, 83, 144,.2) 0px 15px,rgb(77, 83, 144,0.1) 0px 20px, rgb(77, 83, 144,0.1) 0px 25px;
+  
+}
+
+.about-details{
+  font-family: poppins;
+  font-size: 20px;
+}
+
+.about-details-btn{
+  all: unset;
+  border: 2px solid #4d5390;
+  color: #cfcfcf;
+  padding: 2px;
+  margin: 20px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 2px;
+  background-color: #4d5390;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.about-details-btn:hover{
+  border:2px solid #4d5390;
+  background-color: #fff;
+  color: #4d5390;
+  border-radius: 5px;
+
+}
+
+
+.card-img-top{
+
+  width: 100%;
+  height: 100%;
+}
+
+.product-wrapper{
+
+  margin: 2px;
+  padding: 2px;
+
+}
