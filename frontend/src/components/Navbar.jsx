@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 
+import data from '../data/data.json'
 const Navbar = () => {
+    console.log(data.products[0].category,"chk")
+    console.log(data.products.filter((e)=> e.category === 'Vgetables'))
+
     return (
         <>
 
@@ -40,8 +44,17 @@ const Navbar = () => {
 
                                         <ul className="dropdown-menu submenu" >
 
-                                            <Link to="/Products/Apples" className="dropdown-item"> Apples </Link>
-                                            <Link to="/Products/Banana" className="dropdown-item"> Banana </Link>
+                                            {/* <Link to="/Products/Apples" className="dropdown-item"> Apples </Link> */}
+                                            {
+                                                data.products.filter((e)=> e.category === 'Fruits' ).map((e)=>{
+                                                    return <Link key={e.id} to={`/Products/${e.title}`} className="dropdown-item"> {e.title} </Link>
+                                                })
+                                                
+
+
+                                            }
+
+                                            {/* <Link to="/Products/Banana" className="dropdown-item"> Banana </Link> */}
 
 
                                         </ul>
@@ -55,8 +68,14 @@ const Navbar = () => {
 
                                         <ul className="dropdown-menu submenu" >
 
-                                            <Link to="/Products/:id" className="dropdown-item"> items3 </Link>
-                                            <Link to="/Products/:id" className="dropdown-item"> items4 </Link>
+                                        {
+                                                data.products.filter((e)=> e.category === 'Vegetables' ).map((e)=>{
+                                                    return <Link key={e.id} to={`/Products/${e.title}`} className="dropdown-item"> {e.title} </Link>
+                                                })
+                                                
+
+
+                                            }
                                         </ul>
 
                                     </li>
