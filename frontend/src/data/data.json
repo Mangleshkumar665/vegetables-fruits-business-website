@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Apple",
+      "category": "Fruits",
+      "thumb": "../images/products/apple-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    },
+    {
+      "id": 2,
+      "title": "Banana",
+      "category": "Fruits",
+      "thumb": "../images/products/banana-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    },
+    {
+      "id": 3,
+      "title": "Black Grapes",
+      "category": "Fruits",
+      "thumb": "../images/products/blackgrapes-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    },
+    {
+      "id": 4,
+      "title": "Mango",
+      "category": "Fruits",
+      "thumb": "../images/products/mango-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    },
+    {
+      "id": 5,
+      "title": "Potato",
+      "category": "Vegetables",
+      "thumb": "../images/products/potato-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    },
+    {
+      "id": 6,
+      "title": "Green Chilies",
+      "category": "Vegetables",
+      "thumb": "../images/products/chilli-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    },
+    {
+      "id": 7,
+      "title": "Tomato",
+      "category": "Vegetables",
+      "thumb": "../images/products/potato-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    },
+    {
+      "id": 8,
+      "title": "Onion",
+      "category": "Vegetables",
+      "thumb": "../images/products/onion-thumb.jpg",
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+    }
+  ],
+  "frontPage": 
+    {
+      "background1": "../images/frontpage/4.jpg",
+      "background2": "../images/frontpage/5.jpg",
+      "background3": "../images/frontpage/6.jpg"
+    }
+  
+}

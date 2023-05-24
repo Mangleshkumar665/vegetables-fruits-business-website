@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
@@ -6,24 +7,24 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg bg-body-tertiary ">
                 <div className="container-fluid  ">
 
-                    
-                    <a className="navbar-brand " href="/">BalaJi Freshee OverSease</a>
+
+                    <Link to="/" className="navbar-brand " >BalaJi Freshee OverSease</Link>
 
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-{/* d-flex justify-content-center align-items-center */}
+                    {/* d-flex justify-content-center align-items-center */}
 
                     <div className="collapse navbar-collapse  navbar-actions-wrapper    " id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-actions-subwrapper  d-flex justify-content-start align-items-center ">
                             <li className="nav-item  ">
-                                <a className="nav-link active" aria-current="page" href="/">Home</a>
+                                <Link to="/" className="nav-link active" aria-current="page" >Home</Link>
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/">About Us </a>
+                                <Link to="About-Us" className="nav-link" >About Us </Link>
                             </li>
 
                             <li className="nav-item dropdown">
@@ -35,12 +36,12 @@ const Navbar = () => {
 
                                 <ul className="dropdown-menu ">
                                     <li>
-                                        <a className="dropdown-item" href="">Fresh Fruits</a>
+                                        <div className="dropdown-item" >Fresh Fruits</div>
 
                                         <ul className="dropdown-menu submenu" >
 
-                                            <li className="dropdown-item"> items1 </li>
-                                            <li className="dropdown-item"> items1 </li>
+                                            <Link to="/Products/Apples" className="dropdown-item"> Apples </Link>
+                                            <Link to="/Products/Banana" className="dropdown-item"> Banana </Link>
 
 
                                         </ul>
@@ -50,12 +51,12 @@ const Navbar = () => {
 
 
                                     <li>
-                                        <a className="dropdown-item" href="">Fresh Vegetables</a>
+                                        <Link to="/Products/:id" className="dropdown-item" >Fresh Vegetables</Link>
 
                                         <ul className="dropdown-menu submenu" >
 
-                                            <li className="dropdown-item"> items3 </li>
-                                            <li className="dropdown-item"> items4 </li>
+                                            <Link to="/Products/:id" className="dropdown-item"> items3 </Link>
+                                            <Link to="/Products/:id" className="dropdown-item"> items4 </Link>
                                         </ul>
 
                                     </li>
@@ -73,21 +74,18 @@ const Navbar = () => {
 
 
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                <div className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Import/Export
-                                </a>
+                                </div>
 
 
                                 <ul className="dropdown-menu ">
 
-                                    <li className="dropdown-item">
-                                        nepal
-                                    </li>
+                                    <Link to="/Transportation/idafmno" className="dropdown-item"> Australia  </Link>
 
-                                    <li className="dropdown-item">
-                                        bhutan
-                                    </li>
+
+                                    <Link to="/Transportation/idafmno" className="dropdown-item"> Bhutan  </Link>
 
 
 
@@ -95,10 +93,10 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Contact Us </a>
+                                <Link to="/Contact-Us" className="nav-link" >Contact Us </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Gallery </a>
+                                <Link to="/Gallery" className="nav-link" >Gallery </Link>
                             </li>
 
 
