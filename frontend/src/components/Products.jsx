@@ -1,14 +1,7 @@
 import data from '../data/data.json'
 
 
-import appleThumb from '../images/products/apple-thumb.jpg'
-import bananaThumb from '../images/products/banana-thumb.jpg'
-import blackgrapesThumb from '../images/products/blackgrapes-thumb.jpg'
-import potatoThumb from '../images/products/potato-thumb.jpg'
-import mangoThumb from '../images/products/mango-thumb.jpg'
-import chilliThumb from '../images/products/chilli-thumb.jpg'
-import tomatoThumb from '../images/products/tomato-thumb.jpg'
-import onionThumb from '../images/products/onion-thumb.jpg'
+
 import { Link } from 'react-router-dom'
 
 // import back1 from '../images/frontpage/back1.jpg'
@@ -22,7 +15,7 @@ import { Link } from 'react-router-dom'
 
 
 const Products = () => {
-    console.log(data.products,"chkl")
+    // console.log(data.products,"chkl")
 
     return (
         <div className=" products-main">
@@ -57,7 +50,7 @@ const Products = () => {
 
                         <div className="card-body">
                             <h5 className="card-title text-center">{product.title}</h5>
-                            {console.log(product.title)}
+                            {/* {console.log(product.title)} */}
                         </div>
 
                         <div className='product-details d-flex justify-content-center align-items-center'>

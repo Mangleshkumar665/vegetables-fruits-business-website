@@ -5,63 +5,179 @@
       "title": "Apple",
       "category": "Fruits",
       "thumb": "../images/products/apple-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "background": {
+        "one": "../images/products/albums/apple/b1.jpg",
+        "two": "../images/products/albums/apple/b2.jpg"
+      },
+      
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/apple/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/apple/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/apple/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/apple/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/apple/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/apple/6.jpg" }
+      ],
+
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": " Fresh Apples is one of the important fruit crops commercially grown. The main commercially grown varieties are Bhagwa , Arkata & Ganesh, Bhagwa is widely known for its soft seed, Dark red colour, and extremely delicious. Varities : Bhagwa, Arkata, Ganesh Weight : 250 gm+ 400 gm Taste : Sweet Packing : 3 kg, 5 kg, 10 kg, Carton Box Fresh Pomegranate Exporters from India also provide Pomegranate Import at Sri Lanka, Maldives, Oman ,South Africa, Germany, UK, Sweden, Italy, USA, Australia, Canada and all over world."
     },
     {
       "id": 2,
       "title": "Banana",
       "category": "Fruits",
       "thumb": "../images/products/banana-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "background": {
+        "one": "../images/products/albums/banana/b1.jpg",
+        "two": "../images/products/albums/banana/b2.jpg"
+      },
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/banana/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/banana/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/banana/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/banana/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/banana/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/banana/6.jpg" }
+      ],
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": " Bananas are a widely consumed fruit loved for their distinct flavor and convenient shape. With their elongated and curved appearance, they are easily recognizable. When ripe, their thick peel turns a vibrant shade of yellow, indicating their readiness to be enjoyed. Beyond their appealing taste, bananas offer numerous health benefits. They are packed with essential nutrients like potassium, vitamin C, and dietary fiber while being low in calories and fat. This makes them an excellent choice for a healthy snack or addition to various recipes. "
     },
     {
       "id": 3,
-      "title": "Black Grapes",
+      "specialName":"Black Grapes",
+      "title": "Black-Grapes",
       "category": "Fruits",
       "thumb": "../images/products/blackgrapes-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "background": {
+        "one": "../images/products/albums/blackGrapes/b1.jpg",
+        "two": "../images/products/albums/blackGrapes/b2.jpg"
+      },
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/blackGrapes/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/blackGrapes/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/blackGrapes/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/blackGrapes/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/blackGrapes/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/blackGrapes/6.jpg" }
+      ],
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": "Black grapes are a delicious and visually striking fruit, known for their deep purple or almost black skin. They have a round shape and are usually smaller in size compared to other grape varieties. The juicy flesh of black grapes offers a perfect balance of sweetness and tartness. Packed with antioxidants, vitamins, and minerals, black grapes provide numerous health benefits. They can be enjoyed as a refreshing snack, added to fruit salads, used in desserts, or even pressed to make grape juice or wine."
     },
     {
       "id": 4,
       "title": "Mango",
       "category": "Fruits",
       "thumb": "../images/products/mango-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "background": {
+        "one": "../images/products/albums/mango/b1.jpg",
+        "two": "../images/products/albums/mango/b2.jpg"
+      },
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/mango/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/mango/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/mango/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/mango/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/mango/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/mango/6.jpg" }
+      ],
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": "Mangoes are a luscious tropical fruit celebrated for their sweet and juicy flavor. They have a distinct shape, often being oval or round, with a vibrant color ranging from green to various shades of yellow and orange when ripe. The smooth skin of a mango encases the succulent flesh, which can vary in texture from firm to soft. Apart from their delightful taste, mangoes are rich in vitamins, minerals, and antioxidants, making them a nutritious addition to any diet. Whether eaten fresh, blended into smoothies, or used in various culinary creations, mangoes are a beloved fruit enjoyed worldwide."
     },
     {
       "id": 5,
       "title": "Potato",
       "category": "Vegetables",
       "thumb": "../images/products/potato-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "background": {
+        "one": "../images/products/albums/potato/b1.jpg",
+        "two": "../images/products/albums/potato/b2.jpg"
+      },
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/potato/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/potato/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/potato/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/potato/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/potato/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/potato/6.jpg" }
+      ],
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": "Potatoes are a versatile and widely consumed vegetable that belong to the nightshade family. They are known for their starchy texture and ability to be prepared in numerous ways. Potatoes come in various shapes, sizes, and colors, including brown, yellow, and red. They are a good source of carbohydrates, fiber, and essential nutrients like vitamin C and potassium. From crispy fries and creamy mashed potatoes to hearty stews and comforting baked dishes, potatoes are a staple ingredient in many cuisines around the world. They are valued for their filling and satisfying nature, making them a popular choice for a variety of meals."
     },
     {
       "id": 6,
-      "title": "Green Chilies",
+      "specialName":"Green Chilies",
+      "title": "Green-Chilies",
       "category": "Vegetables",
       "thumb": "../images/products/chilli-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "background": {
+        "one": "../images/products/albums/greenChilli/b1.jpg",
+        "two": "../images/products/albums/greenChilli/b2.jpg"
+      },
+
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/greenChilli/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/greenChilli/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/greenChilli/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/greenChilli/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/greenChilli/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/greenChilli/6.jpg" }
+      ],
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": " Green chilies are vibrant and fiery peppers widely used in cuisines across the globe. They are characterized by their small size, elongated shape, and bright green color. Green chilies pack a punch of heat and add a distinctive spicy flavor to dishes. They are rich in vitamins A and C and contain capsaicin, known for its potential health benefits. Green chilies can be used in various forms, such as chopped, sliced, or pureed, to enhance the taste of curries, salsas, stir-fries, and marinades. However, their spiciness should be handled with caution, as the heat level can vary among different varieties."
     },
     {
       "id": 7,
       "title": "Tomato",
       "category": "Vegetables",
-      "thumb": "../images/products/potato-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "thumb": "../images/products/tomato-thumb.jpg",
+      "background": {
+        "one": "../images/products/albums/tomato/b1.jpg",
+        "two": "../images/products/albums/tomato/b2.jpg"
+      },
+
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/tomato/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/tomato/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/tomato/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/tomato/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/tomato/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/tomato/6.jpg" }
+      ],
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": "Tomatoes are a popular fruit that is often treated and consumed as a vegetable. They come in a variety of sizes, shapes, and colors, including red, yellow, and even green. Tomatoes are known for their juicy and flavorful flesh, making them a staple ingredient in salads, sandwiches, sauces, and soups. They are rich in vitamins A and C, as well as antioxidants like lycopene, which is associated with numerous health benefits. Whether eaten fresh, roasted, or cooked into dishes, tomatoes add a delightful burst of tangy sweetness to culinary creations, making them a versatile and beloved ingredient in many cuisines worldwide."
     },
     {
       "id": 8,
       "title": "Onion",
       "category": "Vegetables",
       "thumb": "../images/products/onion-thumb.jpg",
-      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q"
+      "background": {
+        "one": "../images/products/albums/onion/b1.jpg",
+        "two": "../images/products/albums/onion/b2.jpg"
+      },
+      "images":[
+        {"id": 1 ,"img": "../images/products/albums/onion/1.jpg" },
+        {"id": 2 ,"img": "../images/products/albums/onion/2.jpg" },
+        {"id": 3 ,"img": "../images/products/albums/onion/3.jpg" },
+        {"id": 4 ,"img": "../images/products/albums/onion/4.jpg" },
+        {"id": 5 ,"img": "../images/products/albums/onion/5.jpg" },
+        {"id": 6 ,"img": "../images/products/albums/onion/6.jpg" }
+      ],
+      
+      "video-link": "https://www.youtube.com/embed/NvdzK3RxC-Q",
+      "details": " Onions are pungent and flavorful bulb vegetables widely used in cooking across various cultures. They come in different varieties, such as red, white, and yellow, and are known for their distinct layers and strong aroma. Onions add depth and complexity to a wide range of dishes, including soups, stews, stir-fries, and salads. Rich in vitamins, minerals, and antioxidants, onions offer potential health benefits. They can be enjoyed raw, sautéed, caramelized, or used as a flavor base, lending their unique taste and texture to enhance the overall flavor profile of many culinary creations."
     }
   ],
-  "frontPage": 
-    {
-      "background1": "../images/frontpage/4.jpg",
-      "background2": "../images/frontpage/5.jpg",
-      "background3": "../images/frontpage/6.jpg"
-    }
-  
+  "frontPage": {
+    "background1": "../images/frontpage/4.jpg",
+    "background2": "../images/frontpage/5.jpg",
+    "background3": "../images/frontpage/6.jpg"
+  }
 }
