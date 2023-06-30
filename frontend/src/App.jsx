@@ -8,12 +8,17 @@ import ContactPage from './pages/ContactPage';
 import GalleryPage from './pages/GalleryPage';
 import data from './data/data.json';
 
+import Footer from './components/Footer';
+import WhatasppChat from './components/WhatasppChat';
+
 function App() {
   console.log(data.product)
   return (
     <>
       <BrowserRouter>
         <Navbar />
+
+        <WhatasppChat/>
 
         <Routes>
           <Route path='/' element={< Layout />}>
@@ -36,6 +41,8 @@ function App() {
 
 
         </Routes>
+        
+        <Footer/>
 
       </BrowserRouter>
 

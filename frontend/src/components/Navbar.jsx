@@ -4,10 +4,9 @@ import data from '../data/data.json'
 const Navbar = () => {
     console.log(data.products[0].category,"chk")
     console.log(data.products.filter((e)=> e.category === 'Vgetables'))
-
+    
     return (
         <>
-
             <nav className="navbar navbar-expand-lg bg-body-tertiary ">
                 <div className="container-fluid  ">
 
@@ -60,7 +59,6 @@ const Navbar = () => {
                                         </ul>
 
                                     </li>
-
 
 
                                     <li>

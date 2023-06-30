@@ -7,9 +7,10 @@ import data from '../data/data.json'
 
 const ProductPage = () => {
 
-  const currentItemObject =  data.products.find((e) => e.title === window.location.pathname.substring(window.location.pathname.lastIndexOf('/')).slice(1)) 
+  const currentItemObject = data.products.find((e) => e.title === window.location.pathname.substring(window.location.pathname.lastIndexOf('/')).slice(1))
 
 
+    console.log(currentItemObject)
   // console.log(
   //   console.log(currentItemObject.images[0].img)
   // )
@@ -33,7 +34,7 @@ const ProductPage = () => {
 
               } className="d-block w-100" alt="..." />
               <div className="product-overlay d-flex justify-content-center align-items-center">
-                {currentItemObject.specialName !== undefined? currentItemObject.specialName : currentItemObject.title}
+                {currentItemObject.specialName !== undefined ? currentItemObject.specialName : currentItemObject.title}
               </div>
 
             </div>
@@ -69,7 +70,7 @@ const ProductPage = () => {
       <div className="products-body container">
 
         <div className="products-head d-flex justify-content-center align-items-center my-3" >
-        {currentItemObject.specialName !== undefined? currentItemObject.specialName : currentItemObject.title} Export/Import From India
+          {currentItemObject.specialName !== undefined ? currentItemObject.specialName : currentItemObject.title} Export/Import From India
         </div>
         <hr />
 
@@ -118,12 +119,6 @@ const ProductPage = () => {
 
 
       </div>
-
-
-
-
-
-
 
 
 

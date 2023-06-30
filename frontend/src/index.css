@@ -421,6 +421,13 @@ body {
 
 
 
+
+
+
+
+
+
+
 @keyframes marqueeimg {
   0% {
       transform: translate(0, 0);
@@ -507,7 +514,157 @@ body {
 }
 
 
+/* quick enquiry css ------------- */
+
+.cnt-enq-head{
+  /* max-width: 600px; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enq-input{
+  margin-top: 25px;
+  margin: 10px 10px ;
+  width: 20vw;
+  height: 35px;
+  font-size: large;
+}
+
+.msg{
+  width: 98%;
+
+  margin-top: 25px;
+  margin: 10px 10px ;
+
+  font-size: large;
+
+  height: 100px;
+  resize: none;
+}
+.captcha-wrapper{
+  font-family: poppins;
+  margin-top: 25px;
+  margin: 10px 10px ;
+  
+}
+
+.captcha{
+  width: 60px;
+}
+
+.Enquiry-wrapper{
+background-color: #fcfcfc;
+/* margin-bottom: 50px; */
+padding-bottom: 50px;
+/* border: 2px solid red ; */
+
+}
+
+
+.footer-wrapper{
+  /* background-color: #db5e2c; */
+  margin: 0px 0px ;
+  padding: 0px 0px;
+}
+
+.whatsapp-wrapper{
+  position: fixed;
+  bottom: 50px;
+  left: 25px;
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* padding: 5px; */
+
+}
+
+.whatsapp{
+  max-width: 75px;
+  
+}
+
+.clip1{
+  max-width: 500px;
+  position: absolute;
+}
+
+
+.contact-back {
+  height: 300px;
+  max-width: 100vw;
+  overflow: hidden;
+  background-color: rgb(32, 32, 32);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-bottom: 2px solid rgb(216, 216, 216);
+}
+
+
+.contact-back img{
+ opacity: 0.7;
+}
+
+.contact-details{
+  padding: 15px;
+  margin-left: 150px;
+   
+}
+
+.contact-details-list li{
+  list-style-type: none;
+  height: 150px;
+}
+
+
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.form-container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.contact-map{
+  margin-top: 100px;
+}
+
+
 
 @media only screen and (max-width: 600px) {
 
 }
+
+
+
+
+
+
