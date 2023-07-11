@@ -1,26 +1,20 @@
 import { useState } from 'react'
+import * as yup from "yup";
+import { schema } from "../validations/EnquiryValidation";
+import { useForm } from 'react-hook-form';
+
+import { yupResolver } from '@hookform/resolvers/yup'
 
 const Enquiry = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [phone, setPhone] = useState("");
-    const [captcha, setCaptcha] = useState("");
+
+    const { register, handleSubmit, formState: { errors } } = useForm({
+        resolver: yupResolver(schema)
+    });
 
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-        // You can send the form data to a server or perform any other action
-        console.log('Form submitted:', { name, email, message });
 
-        // Clear form fields
-        setName('');
-        setEmail('');
-        setPhone("");
-        setMessage('');
-        setCaptcha("");
-
+    const onSubmit = (data) => {
+        console.log(data)
     };
 
     return (
@@ -36,36 +30,43 @@ const Enquiry = () => {
                 </div>
 
                 <div className='container cnt-enq-head'>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <div>
+                            {console.log(errors)}
                             <input
                                 type="text"
                                 id="name"
                                 className='enq-input'
-                                value={name}
+
                                 placeholder='Name'
-                                onChange={(e) => setName(e.target.value)}
-                                required
+                                {...register("name")}
+
+
                             />
+
+
                             <input
                                 type="text"
                                 id="phone"
                                 placeholder='Phone Number'
                                 className='enq-input'
-                                value={phone}
-                                onChange={(e) => setPhone(e.target.value)}
-                                required
+
+                                {...register("phone")}
+
                             />
+
 
                             <input
                                 type="email"
                                 placeholder='Email'
                                 id="email"
                                 className='enq-input'
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                required
+
+                                {...register("email")}
+
                             />
+
+
                         </div>
                         <div className=''>
 
@@ -74,23 +75,26 @@ const Enquiry = () => {
                                 id="message"
                                 placeholder='Write Your Message here '
                                 className=' msg'
-                                value={message}
-                                onChange={(e) => setMessage(e.target.value)}
-                                required
+
+                                {...register("message")}
+
                             ></textarea>
+                            
+                            
 
                         </div>
                         <div className='captcha-wrapper '>
                             <label htmlFor="captcha">Captcha:</label>
                             <br />
                             14 + 21 = <input type="text"
-                            value={captcha} className='enq-input captcha' onChange={(e) => setCaptcha(e.target.value)}
-                                required />
+                                className='enq-input captcha'
+                                {...register("captcha")}
+                            />
                         </div>
-                        <input id='submit' 
-                                type='submit'
-                                className='product-details-btn' />
-                        
+                        <input id='submit'
+                            type='submit'
+                            className='product-details-btn' />
+
 
 
                     </form>

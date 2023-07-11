@@ -10,7 +10,6 @@ const ProductPage = () => {
   const currentItemObject = data.products.find((e) => e.title === window.location.pathname.substring(window.location.pathname.lastIndexOf('/')).slice(1))
 
 
-    console.log(currentItemObject)
   // console.log(
   //   console.log(currentItemObject.images[0].img)
   // )

@@ -25,11 +25,13 @@ body {
 .dropdown-menu .submenu {
   display: none;
   position: absolute;
+
 }
 
 .dropdown-menu>li:hover>.submenu {
   display: block;
   left: 100%;
+  top: 5px;
 }
 
 
@@ -571,7 +573,7 @@ padding-bottom: 50px;
 
 .whatsapp-wrapper{
   position: fixed;
-  bottom: 50px;
+  bottom: 25px;
   left: 25px;
   z-index: 2;
   background-color: #fff;
@@ -584,6 +586,11 @@ padding-bottom: 50px;
 .whatsapp{
   max-width: 75px;
   
+}
+
+.error-text{
+ border: 2px solid red;
+ color: red; 
 }
 
 .clip1{
@@ -657,6 +664,24 @@ textarea {
   margin-top: 100px;
 }
 
+
+.container2 {
+  overflow: hidden;
+  /* border: 2px solid red ; */
+
+  position: absolute;
+
+  right: 15px;
+  top : 3200px;
+
+  z-index: 1;
+
+}
+
+.image2 {
+  transition: transform 0.3s ease-out;
+  max-width: 1200px;
+}
 
 
 @media only screen and (max-width: 600px) {

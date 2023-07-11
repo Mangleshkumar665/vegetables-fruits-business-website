@@ -2,6 +2,7 @@ import pic1 from "../images/whychooseus/1.jpg"
 import pic2 from "../images/whychooseus/2.jpg"
 import pic3 from "../images/whychooseus/3.jpg"
 import pic4 from "../images/whychooseus/4.jpg"
+import ImageMotion from "../pages/ImageMotion"
 
 
 
@@ -9,6 +10,7 @@ import pic4 from "../images/whychooseus/4.jpg"
 const WhyChooseUs = () => {
 	return (
 		<>
+        <ImageMotion/>
 
 
 			<div className='about-head d-flex justify-content-center align-items-center flex-column'>
@@ -24,12 +26,12 @@ const WhyChooseUs = () => {
 
 
 			<div className="container">
-				<div className="timeline">
-					<div className="timeline-row">
-						<div className="timeline-time">
+				<div className="timeline ">
+					<div className="timeline-row ">
+						{/* <div className="timeline-time">
 							7:45PM<small>Dec 21</small>
-						</div>
-						<div className="timeline-content">
+						</div> */}
+						<div className="timeline-content ">
 							<i className="icon-attachment"></i>
 							<h4>Wide Range of Choices!</h4>
 

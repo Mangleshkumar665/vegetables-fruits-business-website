@@ -10,9 +10,10 @@ import data from './data/data.json';
 
 import Footer from './components/Footer';
 import WhatasppChat from './components/WhatasppChat';
+import ImageMotion from './pages/ImageMotion';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
-  console.log(data.product)
   return (
     <>
       <BrowserRouter>
@@ -21,6 +22,8 @@ function App() {
         <WhatasppChat/>
 
         <Routes>
+          <Route path='*' element={<ErrorPage/>} ></Route>
+
           <Route path='/' element={< Layout />}>
           </Route>
           <Route path='/About-Us' element={< AboutPage />}>
@@ -30,7 +33,7 @@ function App() {
           <Route path='/Products/:id' element={< ProductPage />}>
           </Route>
 
-          <Route path='/Transportaion/:id' element={< ImportExportPage />}>
+          <Route path='/Transportation/:id' element={< ImportExportPage />}>
           </Route>
 
           <Route path='/Contact-Us' element={< ContactPage />}>
@@ -43,6 +46,7 @@ function App() {
         </Routes>
         
         <Footer/>
+
 
       </BrowserRouter>
 

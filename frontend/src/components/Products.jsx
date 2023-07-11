@@ -50,7 +50,6 @@ const Products = () => {
 
                         <div className="card-body">
                             <h5 className="card-title text-center">{product.title}</h5>
-                            {/* {console.log(product.title)} */}
                         </div>
 
                         <div className='product-details d-flex justify-content-center align-items-center'>

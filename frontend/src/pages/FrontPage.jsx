@@ -1,25 +1,34 @@
 
+import { useState } from 'react';
 import data from '../data/data.json'
 
 const FrontPage = () => {
-  console.log(data.frontPage.background1, "chl")
+
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const xPos = (e.nativeEvent.clientX / window.innerWidth) * 30 - 15;
+    const yPos = (e.nativeEvent.clientY / window.innerHeight) * 30 - 15;
+    setPosition({ x: xPos, y: yPos });
+  };
+
   return (
     <div className='col'>
       <div className='row' style={{ height: "90vh", width: "100vw" }}>
-        <div className="frontpage-wrapper">
+        <div className="frontpage-wrapper " >
 
           <div className='fp-bg-image-wrapper'>
 
             <div id="carouselExampleAutoplaying" className="carousel slide fp-bg-image-wrapper" data-bs-ride="carousel">
               <div className="carousel-inner ">
                 <div className="carousel-item active">
-                  <img src={data.frontPage.background1} className="d-block w-100 carousel-img " alt="/" />
+                  <img src={data.frontPage.background1} className="d-block w-100 carousel-img " alt="/"  onMouseMove={handleMouseMove}  style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
                 </div>
                 <div className="carousel-item carousel-item-clipped">
-                  <img src={data.frontPage.background2} className="d-block w-100 carousel-img  " alt="/" />
+                  <img src={data.frontPage.background2} className="d-block w-100 carousel-img  " alt="/"  onMouseMove={handleMouseMove}  style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
                 </div>
                 <div className="carousel-item  ">
-                  <img src={data.frontPage.background3} className="d-block w-100  carousel-item-clipped carousel-img " alt="/" />
+                  <img src={data.frontPage.background3} className="d-block w-100  carousel-item-clipped carousel-img " alt="/"  onMouseMove={handleMouseMove}  style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

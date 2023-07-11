@@ -2,8 +2,7 @@ import { Link } from "react-router-dom"
 
 import data from '../data/data.json'
 const Navbar = () => {
-    console.log(data.products[0].category,"chk")
-    console.log(data.products.filter((e)=> e.category === 'Vgetables'))
+
     
     return (
         <>
@@ -41,21 +40,14 @@ const Navbar = () => {
                                     <li>
                                         <div className="dropdown-item" >Fresh Fruits</div>
 
-                                        <ul className="dropdown-menu submenu" >
+                                        <ul className="dropdown-menu submenu " >
 
-                                            {/* <Link to="/Products/Apples" className="dropdown-item"> Apples </Link> */}
+
                                             {
-                                                data.products.filter((e)=> e.category === 'Fruits' ).map((e)=>{
+                                                data.products.filter((e) => e.category === 'Fruits').map((e) => {
                                                     return <Link key={e.id} to={`/Products/${e.title}`} className="dropdown-item"> {e.title} </Link>
                                                 })
-                                                
-
-
                                             }
-
-                                            {/* <Link to="/Products/Banana" className="dropdown-item"> Banana </Link> */}
-
-
                                         </ul>
 
                                     </li>
@@ -66,26 +58,13 @@ const Navbar = () => {
 
                                         <ul className="dropdown-menu submenu" >
 
-                                        {
-                                                data.products.filter((e)=> e.category === 'Vegetables' ).map((e)=>{
+                                            {
+                                                data.products.filter((e) => e.category === 'Vegetables').map((e) => {
                                                     return <Link key={e.id} to={`/Products/${e.title}`} className="dropdown-item"> {e.title} </Link>
                                                 })
-                                                
-
-
                                             }
                                         </ul>
-
                                     </li>
-
-
-
-
-                                    {/* <li><hr className="dropdown-divider" /></li> */}
-
-
-
-
                                 </ul>
                             </li>
 
@@ -95,17 +74,12 @@ const Navbar = () => {
                                     aria-expanded="false">
                                     Import/Export
                                 </div>
-
-
                                 <ul className="dropdown-menu ">
-
-                                    <Link to="/Transportation/idafmno" className="dropdown-item"> Australia  </Link>
-
-
-                                    <Link to="/Transportation/idafmno" className="dropdown-item"> Bhutan  </Link>
-
-
-
+                                    {
+                                        data.importExport.map((e) => {
+                                            return <Link key={e.id} to={`/Transportation/${e.title}`} className="dropdown-item"> {e.title} </Link>
+                                        })
+                                    }
                                 </ul>
                             </li>
 

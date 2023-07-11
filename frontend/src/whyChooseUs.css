@@ -6,7 +6,7 @@
 .timeline {
     position: relative;
     background-color: #e5e1e1;
-  font-family: poppins;
+    font-family: poppins;
 
     
     -webkit-border-radius: 4px;
@@ -48,6 +48,7 @@
   .timeline-row .timeline-content {
     position: relative;
     padding: 20px 30px;
+    z-index: 2;
     background-color: #f9f9f9;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* border: 2px solid red; */
