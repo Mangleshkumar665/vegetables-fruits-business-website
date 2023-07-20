@@ -15,7 +15,7 @@ const ProductPage = () => {
   // )
 
   return (
-    <div className="products-main">
+    <div className="products-main start-margin">
 
 
 

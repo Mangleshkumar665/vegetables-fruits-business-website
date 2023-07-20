@@ -129,7 +129,7 @@ const ContactPage = () => {
             </div>
 
             <div className="form-group">
-              <textarea 
+              <textarea
                 id="message"
                 placeholder='Write Your Message Here!'
                 value={message}
@@ -154,7 +154,7 @@ const ContactPage = () => {
 
 
       <div className="contact-map container d-flex justify-content-center">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.8562438389454!2d83.4116217747832!3d26.780851976725945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399144d6e80c529f%3A0x4565b7d267007063!2sVishwakarmapuram%2C%20Gorakhpur%2C%20Uttar%20Pradesh%20273014!5e0!3m2!1sen!2sin!4v1688067484526!5m2!1sen!2sin" width={window.innerWidth - 100} height="320"  allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.8562438389454!2d83.4116217747832!3d26.780851976725945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399144d6e80c529f%3A0x4565b7d267007063!2sVishwakarmapuram%2C%20Gorakhpur%2C%20Uttar%20Pradesh%20273014!5e0!3m2!1sen!2sin!4v1688067484526!5m2!1sen!2sin" width={window.innerWidth - 100} height="320" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
     </div>

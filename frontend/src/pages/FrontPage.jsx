@@ -13,22 +13,22 @@ const FrontPage = () => {
   };
 
   return (
-    <div className='col'>
+    <div className='col frontpage-wrapper '>
       <div className='row' style={{ height: "90vh", width: "100vw" }}>
-        <div className="frontpage-wrapper " >
+        <div className=" " >
 
           <div className='fp-bg-image-wrapper'>
 
             <div id="carouselExampleAutoplaying" className="carousel slide fp-bg-image-wrapper" data-bs-ride="carousel">
               <div className="carousel-inner ">
                 <div className="carousel-item active">
-                  <img src={data.frontPage.background1} className="d-block w-100 carousel-img " alt="/"  onMouseMove={handleMouseMove}  style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
+                  <img src={data.frontPage.background1} className="d-block w-100 carousel-img " alt="/" onMouseMove={handleMouseMove} style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
                 </div>
                 <div className="carousel-item carousel-item-clipped">
-                  <img src={data.frontPage.background2} className="d-block w-100 carousel-img  " alt="/"  onMouseMove={handleMouseMove}  style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
+                  <img src={data.frontPage.background2} className="d-block w-100 carousel-img  " alt="/" onMouseMove={handleMouseMove} style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
                 </div>
                 <div className="carousel-item  ">
-                  <img src={data.frontPage.background3} className="d-block w-100  carousel-item-clipped carousel-img " alt="/"  onMouseMove={handleMouseMove}  style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
+                  <img src={data.frontPage.background3} className="d-block w-100  carousel-item-clipped carousel-img " alt="/" onMouseMove={handleMouseMove} style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -89,7 +89,7 @@ const FrontPage = () => {
         <div className='frontpage2-wrapper'></div>
       </div>
       <div className='row'>
-        
+
       </div>
     </div>
   )

@@ -19,7 +19,7 @@ const Products = () => {
 
     return (
         <div className=" products-main">
-            <div className='about-head d-flex justify-content-center align-items-center flex-column'>
+            <div className=' d-flex justify-content-center align-items-center flex-column'>
                 <div className="about-head-title">
 
                     Our Products

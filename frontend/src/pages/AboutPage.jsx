@@ -5,9 +5,11 @@ import About from '../components/About'
 const AboutPage = () => {
   return (
     <>
-      
-      <About/>
-      
+      <div className='start-margin'>
+        <About />
+
+      </div>
+
 
     </>
   )

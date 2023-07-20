@@ -11,7 +11,7 @@ const ImageMotion = () => {
 
   return (
     <div className="container2" onMouseMove={handleMouseMove}>
-      <img src={imgOne} className="image2" style={{ transform: `translate(${position.x}px, ${position.y}px)` }} />
+      {/* <img src={imgOne} className="image2" style={{ transform: `translate(${position.x}px, ${position.y}px)` }} /> */}
     </div>
   );
 };

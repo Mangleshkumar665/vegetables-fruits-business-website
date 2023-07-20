@@ -11,8 +11,7 @@ body {
   /* background-color: #8EC5FC;
   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
 
-  background: rgb(239, 237, 238);
-  background: linear-gradient(90deg, rgba(239, 237, 238, 1) 0%, rgba(226, 221, 220, 1) 100%);
+ 
   
 
 }
@@ -56,10 +55,11 @@ body {
   z-index: 2;
   border: 2px solid #cfcfcf;
   width: 100vw;
-
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   opacity: 0.8;
+  position: absolute;
+  
 }
 
 
@@ -85,6 +85,11 @@ body {
 
 
 
+.layout{
+  margin-top: 75px;
+  width: 100vw;
+
+}
 
 
 /* --------------------------------frontpage */
@@ -93,10 +98,12 @@ body {
 
 .frontpage-wrapper {
 
-  background-color: white;
+
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
 }
 
 .fp-bg-image-wrapper {
@@ -203,25 +210,16 @@ body {
   border: 2px solid #db5e2c;
 }
 
-.about-wrapper {}
 
 
-.about-head {
-
-  background: rgb(239, 237, 238);
-  background: linear-gradient(90deg, rgba(239, 237, 238, 1) 0%, rgba(226, 221, 220, 1) 100%);
-
-}
 
 .about-head-title {
   font-family: 'poppins';
   font-size: 50px;
   margin: 5px;
   padding: 2px;
-  border-radius: 0px !important;
 
-
-  box-shadow: rgb(77, 83, 144, .4) 0px 5px, rgb(77, 83, 144, 0.8) 0px 10px, rgb(77, 83, 144, .2) 0px 15px, rgb(77, 83, 144, 0.1) 0px 20px, rgb(77, 83, 144, 0.1) 0px 25px;
+  
 
 }
 
@@ -276,8 +274,9 @@ body {
 
 .products-main {
   width: 100vw;
-  background: rgb(230, 226, 226);
-  background: linear-gradient(180deg, rgba(230, 226, 226, 1) 0%, rgba(255, 255, 255, 1) 52%);
+
+  
+
 }
 
 
@@ -448,9 +447,7 @@ body {
 
 
 
-.products-main{
 
-}
 
 .products-bg{
 
@@ -557,13 +554,22 @@ body {
 }
 
 .Enquiry-wrapper{
-background-color: #fcfcfc;
+
+
+
 /* margin-bottom: 50px; */
 padding-bottom: 50px;
 /* border: 2px solid red ; */
 
 }
 
+.eqn-btn{
+  width: 8vw;
+  font-family: "poppins";
+  background-color: white;
+  border: 2xp solid rebeccapurple ;
+  
+}
 
 .footer-wrapper{
   /* background-color: #db5e2c; */
@@ -624,6 +630,9 @@ padding-bottom: 50px;
   height: 150px;
 }
 
+.error{
+  border :2px solid red;
+}
 
 .form-container {
   width: 400px;
@@ -683,6 +692,27 @@ textarea {
   max-width: 1200px;
 }
 
+.aboutpage{
+  margin-top: 100px;
+}
+.contact-wrapper{
+  margin-top: 75px;
+
+}
+
+.start-margin{
+  margin-top: 75px;
+
+}
+
+.gallery-heading h1{
+
+  font-size: 10vw;
+  top: 25px;
+  z-index: 1;
+ 
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -692,4 +722,52 @@ textarea {
 
 
 
+
+
+
+
+
+/* GALLERY -  */
+
+
+/* section */
+.section {
+  padding: 5rem 0;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 95vw;
+  }
+  .prev-btn {
+    left: -4.5rem;
+  }
+  .next-btn {
+    right: -4.5rem;
+  }
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  height: 15rem;
+}
+.img:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
 

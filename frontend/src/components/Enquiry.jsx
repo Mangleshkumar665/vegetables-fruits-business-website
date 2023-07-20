@@ -11,10 +11,11 @@ const Enquiry = () => {
         resolver: yupResolver(schema)
     });
 
-
+    let errorObject ={};
 
     const onSubmit = (data) => {
         console.log(data)
+        errorObject = errors;
     };
 
     return (
@@ -32,24 +33,38 @@ const Enquiry = () => {
                 <div className='container cnt-enq-head'>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div>
-                            {console.log(errors)}
-                            <input
+                            {console.log(errors,errorObject)}
+                            {
+                                errorObject?.name?<input
                                 type="text"
                                 id="name"
-                                className='enq-input'
+                                className='enq-input  '
 
                                 placeholder='Name'
                                 {...register("name")}
+                            />:
+                            <input
+                                type="text"
+                                id="name"
+                                className='enq-input '
 
-
+                                placeholder='Name'
+                                {...register("name")}
                             />
+
+                            
+
+
+                                
+                            }
+                            
 
 
                             <input
-                                type="text"
+                                type="telephone"
                                 id="phone"
                                 placeholder='Phone Number'
-                                className='enq-input'
+                                className='enq-input enq-telphone'
 
                                 {...register("phone")}
 
@@ -60,7 +75,7 @@ const Enquiry = () => {
                                 type="email"
                                 placeholder='Email'
                                 id="email"
-                                className='enq-input'
+                                className='enq-input enq-email'
 
                                 {...register("email")}
 
@@ -71,10 +86,11 @@ const Enquiry = () => {
                         <div className=''>
 
 
+                            
                             <textarea
                                 id="message"
                                 placeholder='Write Your Message here '
-                                className=' msg'
+                                className=' msg enq-msg'
 
                                 {...register("message")}
 
@@ -91,9 +107,10 @@ const Enquiry = () => {
                                 {...register("captcha")}
                             />
                         </div>
+
                         <input id='submit'
                             type='submit'
-                            className='product-details-btn' />
+                            className='eqn-btn' />
 
 
 

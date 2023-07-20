@@ -7,11 +7,13 @@ import Enquiry from '../components/Enquiry'
 const Layout = () => {
   return (
     <>
-      <FrontPage />
-      <About/>
-      <Products/>
-      <WhyChooseUs />
+      <div className='layout'>
+        <FrontPage />
+        <About />
+        <Products />
+        <WhyChooseUs />
         <Enquiry />
+      </div>
     </>
   )
 }

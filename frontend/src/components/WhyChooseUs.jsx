@@ -10,27 +10,22 @@ import ImageMotion from "../pages/ImageMotion"
 const WhyChooseUs = () => {
 	return (
 		<>
-        <ImageMotion/>
+			<ImageMotion />
 
 
-			<div className='about-head d-flex justify-content-center align-items-center flex-column'>
-				<div className="about-head-title">
+			<header className=' d-flex justify-content-center align-items-center flex-column about-head-title'>
+				Why Choose Us
 
-					Why Choose Us
-				</div>
-
-			</div>
+			</header>
 
 
 
 
 
-			<div className="container">
+			<div className="container ">
 				<div className="timeline ">
 					<div className="timeline-row ">
-						{/* <div className="timeline-time">
-							7:45PM<small>Dec 21</small>
-						</div> */}
+
 						<div className="timeline-content ">
 							<i className="icon-attachment"></i>
 							<h4>Wide Range of Choices!</h4>
@@ -46,9 +41,7 @@ const WhyChooseUs = () => {
 					</div>
 
 					<div className="timeline-row">
-						{/* <div className="timeline-time">
-							8:00 AM<small>Dec 18</small>
-						</div> */}
+
 						<div className="timeline-content">
 							<i className="icon-code"></i>
 							<h4>Reliable and Trusted Suppliers!</h4>
@@ -66,9 +59,8 @@ const WhyChooseUs = () => {
 					</div>
 
 					<div className="timeline-row">
-						{/* <div className="timeline-time">
-							7:25 PM<small>Dec 6</small>
-						</div> */}
+
+
 						<div className="timeline-content">
 							<i className="icon-turned_in_not"></i>
 							<h4>Seamless Trade Experience!</h4>
@@ -83,9 +75,7 @@ const WhyChooseUs = () => {
 					</div>
 
 					<div className="timeline-row">
-						{/* <div className="timeline-time">
-							3:55 PM<small>Dec 26</small>
-						</div> */}
+
 						<div className="timeline-content">
 							<i className="icon-directions"></i>
 							<h4>Customized Solutions</h4>
@@ -96,13 +86,13 @@ const WhyChooseUs = () => {
 
 								</div>
 							</div>
-							
+
 						</div>
 					</div>
 
-					
 
-					
+
+
 
 				</div>
 			</div>

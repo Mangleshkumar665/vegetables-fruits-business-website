@@ -26,7 +26,7 @@ const ImportExportPage = () => {
 
 
   return (
-    <div>
+    <div className="start-margin">
       <div className="contact-header">
         <div className='contact-back'>
           <img className=' ' src={back1} alt="" />
